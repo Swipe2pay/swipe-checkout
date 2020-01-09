@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+    (function (window, document) {
+        var loader = function () {
+            var script = document.createElement("script"), tag = document.getElementsByTagName("script")[0];
+            script.src = './widget.min.js';
+            script.setAttribute("id", "checkout")
+            script.setAttribute("API_KEY", "kcWlsu80YnthtIU2Vsdh4SQiAapzWPdBDrDSwErIMpkUd")
+            tag.parentNode.insertBefore(script, tag);
+        };
+        window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
+    })(window, document);
+</script>
+</head>
+<body>
+	<h1>
+		Hello World
+	</h1>
+	<div id="swipe-checkout"></div>
+</body>
+</html>
