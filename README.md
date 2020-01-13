@@ -6,7 +6,7 @@ Download the javascript file `widget.min.js` and include it in the header of you
 
 If you do not have a swipe2pay account request for one under `Settings` create an API KEY and include it in the javascript header script.
 
-Create and element of id `swipe-checkout` where you want the widget to be displayed.
+Create and element of id `swipe-checkout` where you want the widget to be displayed. 
 
 # Example
 
