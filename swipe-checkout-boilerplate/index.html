@@ -7,7 +7,8 @@
     (function (window, document) {
         var loader = function () {
             var script = document.createElement("script"), tag = document.getElementsByTagName("script")[0];
-            script.src = 'https://cdn.jsdelivr.net/gh/Swipe2pay/swipe-checkout/widget.min.js';
+            // script.src = 'https://cdn.jsdelivr.net/gh/Swipe2pay/swipe-checkout/widget.min.js';
+            script.src = "./widget.min.js"
             script.setAttribute("id", "checkout")
             // script.setAttribute("env", "dev")
             script.setAttribute("API_KEY", "PlnBDzRi9BVJr66cu6imzpZs7crGkC4Zk0lVDJ7be61U9")
