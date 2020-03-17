@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<script>
-    (function (window, document) {
-        var loader = function () {
-            var script = document.createElement("script"), tag = document.getElementsByTagName("script")[0];
-            script.src = 'https://cdn.jsdelivr.net/gh/Swipe2pay/swipe-checkout/widget.min.js';
-            script.setAttribute("id", "checkout")
-            // script.setAttribute("env", "dev")
-            script.setAttribute("API_KEY", "PlnBDzRi9BVJr66cu6imzpZs7crGkC4Zk0lVDJ7be61U9")
-            tag.parentNode.insertBefore(script, tag);
-        };
-        window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
-    })(window, document);
-</script>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        (function (window, document) {
+            var loader = function () {
+                var script = document.createElement("script"),
+                tag = document.getElementsByTagName("script")[0];
+                script.src = './widget.min.js';
+                tag.parentNode.insertBefore(script, tag);
+            };
+            window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload",
+                loader);
+        })(window, document);
+    </script>
 </head>
+
 <body>
-	<div id="swipe-checkout"></div>
+    <div>
+        <div 
+            id="swipe-checkout"
+            data-swipe-api-key="ZaLqWTMmdbwwpl9eiiOjYlBUnbbShqSVOoPjJPNDkG3eL"
+            data-swipe-amount="500"
+            data-swipe-currency="UGX"
+            data-swipe-phone="0787075772"
+            data-swipe-payment-id="011101"
+            ></div>
+    </div>
 </body>
+
 </html>
